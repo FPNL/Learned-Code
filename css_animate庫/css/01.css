@@ -1,0 +1,50 @@
+*{
+	margin: 0;
+	padding: 0;
+
+}
+
+#nav{
+	position: absolute;
+    bottom:  0;
+    right: 0;
+    left: 0;
+    z-index: 9999;
+    display: block;
+    width: 100%;
+    min-width: 1024px;
+    height: 48px;
+    background: rgba(0,0,0,0.5);
+    font-size: 19px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#nav .nav-content{
+	margin: 0 auto;
+    max-width: 980px;
+    padding: 0 22px;
+    position: relative;
+    z-index: 2;
+}
+
+body{
+	font-family: "Myriad Set Pro","SF Pro Icons",
+	"PingFang TC","Helvetica Neue","Helvetica","Arial",
+	sans-serif;
+}
+
+ul{
+	display: flex;
+	box-sizing: border-box;
+	cursor: default;
+    padding: 5px 10px;
+    width: auto;
+    height: 44px;
+	list-style: none;
+	justify-content: space-around;
+	align-items: center;
+}
+

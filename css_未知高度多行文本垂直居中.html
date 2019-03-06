@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>未知高度多行文本垂直居中</title>
+<style>
+*{margin:0;padding:0;}
+
+/* 方法很多，這是其一 */
+.box{
+height:200px;
+width:300px;
+background:pink;
+margin:30px auto;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+
+/* 這是其二 */
+/*
+.box{
+height:200px;
+width:300px;
+background:pink;
+margin:30px auto;
+font-size:0; //這行非常重要
+}
+.box:before{
+content: '我是那个备胎元素';
+display: inline-block;
+background: blue;
+vertical-align: middle;
+width: 0;
+height: 100%;
+}
+.text{
+display: inline-block;
+font-size:16px; //這行非常重要
+vertical-align: middle; //保证文字垂直居中
+}
+*/
+
+
+</style>
+</head>
+<body>
+<div class="box">
+
+<p class="text">
+多行文本未知高度垂直居中-by 一丝
+多行文本未知高度垂直居中-by 一丝
+多行文本未知高度垂直居中-by 一丝
+</p>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+
+		#img_div{
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+			margin: 0 auto;
+			width: 1215px;
+		}
+		div div{
+			/*margin: 200px auto 0;*/
+			border: 1.5px solid #000;
+			width: 300px;
+			height: 168px;
+			position: relative;
+		}
+			/*效果1 使用Position*/
+		.Position{
+			display: none;
+			background: #ccc;
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			left: 0;
+			text-align: center;
+			line-height: 25px;
+		}
+
+
+		/*效果2 Transform*/
+		.Transform{
+			display: none;
+			background: #ccc;
+			text-align: center;
+			line-height: 25px;
+			transform: translateY(-28.5px);
+		}
+
+
+
+		#font_div{
+			background: #ccc;
+			width: 500px;
+			line-height: 24px;
+			font-size: medium;
+			margin: 500px auto;
+			padding: 6px;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-end;
+			align-items: flex-end;
+			overflow: hidden;
+		}
+
+		mark{
+			text-align: center;
+			border: 1px solid #000;
+		}
+
+		a{
+			text-decoration: none;
+			color:#000;
+		}
+
+
+	</style>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/js-style.js"></script>
+</head>
+<body>
+	
+	<div id="img_div">
+		<div id="div_1" >
+			<img src="img/dog.jpg" alt="賣狗囉">
+
+			<p id="p_1" class="Position">mouseenter mouseout + Position，評價1星</p>
+		</div>
+
+		<div id="div_2" >
+			<img src="img/dog.jpg" alt="賣狗囉">
+
+			<p id="p_2" class="Transform">mouseenter mouseout + Transform，評價1星</p>
+		</div>
+
+		<div id="div_3" >
+			<img src="img/dog.jpg" alt="賣狗囉">
+
+			<p id="p_3" class="Position">方法2.1:.hover + Position，評價4星</p>
+		</div>
+
+
+		<div id="div_4" >
+			<img src="img/dog.jpg" alt="賣狗囉">
+
+			<p id="p_4" class="Transform">方法2.2:.hover + Transform</p>
+		</div>
+		<br>
+		<p style="width:50%;">
+			未驗證：on(mouse系列效果)真的很有病，使用不熟練。
+		</p>
+		 <p style="width:50%;">
+			 推測：SlideUp有隱藏(display:none)的效果，而SlideDown則反過來，所以JQ中，Hover In 程式碼先放UP就代表先隱藏，Hover out移出後則是Down顯現的效果
+		</p>
+	</div>
+
+	<div id="font_div">
+		<mark>
+			<a id="a1" href="">456</a>
+			<a id="a2" href="">中</a>
+			<a id="a3" href="">123</a>
+		</mark>
+		<p id="font_p" style="text-align: justify;">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum autem odio blanditiis, neque dolore, voluptate quaerat aperiam vero aliquam voluptatibus quos! Consectetur velit, ducimus quisquam nostrum aut maxime ullam officiis.
+		</p>
+	</div>
+
+	<script>
+		
+	</script>
+
+</body>
+</html>

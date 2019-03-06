@@ -1,0 +1,356 @@
+
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+/*--大範圍區塊--*/
+
+body {
+	font-family: 'Noto Sans TC', Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	letter-spacing: 0.1em;
+	background-color: #12191f;
+	line-height: 1.5em;
+	color: #fff;
+     }
+
+#body {
+	font-family: 'Noto Sans TC', Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	letter-spacing: 0.1em;
+	background-color: #808080;
+	line-height: 1.5em;
+	color: #fff;
+     }
+img{
+	width: 100%;
+	}
+#wrapper {
+	width: 960px;
+	padding: 1em;
+	margin-top: 30px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	font-family: 'Noto Sans TC', Arial, Helvetica, sans-serif;
+	color: #fff;
+	background-image: url(../img/bg.jpg);
+	background-attachment: fixed;
+	}
+
+/*--板投區塊--*/
+	 
+#header {
+	width: 100%;
+	margin: 10px 0 30px 0;
+	float: left;
+	}
+#header h1{
+	text-align: center;
+	font-family: 'Ubuntu', sans-serif;
+	}
+#header #headerL {
+	width: 20%;
+	float: left;
+	}
+#header #headerL img{
+	width: 95%;
+	}
+/*#header #headerR {
+	float: right;
+	margin-top: 25px;
+	}
+
+#header a{
+	display: block;
+	width: 120px;
+	height: 50px;
+	background-color:rgba(27, 127, 204, 0.38);
+	margin: 0 auto;
+    line-height: 50px;
+    text-align:center;
+    text-decoration: none;
+    float: left;
+    color: #ffffff;
+	}
+#header a:hover{
+	background-color: #7fc7ff;
+	color: #0a3154;
+	}
+*/
+/*--BANNER區塊--*/	
+
+.J_banner{
+	max-width:100%;
+	position:relative;
+	overflow:hidden;
+	margin:0 auto 10px;
+	}
+.J_banner .img{
+	width:2000px;
+	overflow:hidden;
+	position:absolute;
+	top:0;left:0;
+	}
+.J_banner .img li{
+	float:left;
+	position:relative;
+	}
+.J_banner ol, ul ,li{
+		list-style: none;
+	}
+
+.cut{
+	background:#bdbdbd;
+	position:absolute;
+	font-family:'宋体';
+	color:#fff;
+	text-align:center;
+	cursor:pointer;
+	opacity:0.2;
+	}
+.J_banner .cut{
+	width:34px;
+	height:58px;
+	left:40px;
+	font-size:18px;
+	line-height:58px;
+	}
+.J_banner .cut.next{
+	left:auto;
+	right:20px;
+	}
+.J_banner a{
+	outline:none;
+	text-decoration:none;
+	}
+.J_banner .pointer{
+	height:20px;
+	position:absolute;
+	bottom:0px;
+	}
+.J_banner .pointer li{
+	width:42px;
+	height:1px;
+	background:#5a5a5a;
+	float:left;
+	margin:0 5px;
+	cursor: pointer;
+	}
+.J_banner .pointer li.now{
+	height:4px;
+	background:#c8c8c8;
+	}
+
+
+
+/*--個別區塊--*/
+
+#mapss iframe{
+	width: 49%;
+	float: left;
+	margin-bottom: 20px;
+	}
+#mapss img{
+	width: 49%;
+	float:right;
+	}
+#bigpai{
+	clear: both;
+	}
+#bigpai img{
+	width: 32%;
+	float: left;
+	margin-left: 5px;
+	margin-bottom: 10px;
+	border: 1px #fff solid;
+	}
+
+/*--個別區塊小標題--*/
+
+.font_title {
+	color: #fff;
+	font-weight: bold;
+	font-family: 'Noto Sans TC', Arial, Helvetica, sans-serif;
+	height: 30px;
+	width: 30%;
+	background-color: rgba(255, 255, 255, 0.28);
+	border-left-width: 5px solid #dceffd;
+	padding: 5px 2px 2px 10px;
+	}
+
+.font_focus {
+	font-weight: bold;
+	color: #F00;
+	}
+.text-indent {
+	text-indent : 2em;
+	text-align: justify;
+	text-justify:inter-ideograph;	
+	padding-right: 1em;
+	padding-left: 1em;	
+	}
+.text-indent-item-title {
+	padding-left: 1em;
+	line-height: 0.5em;
+	}
+
+
+/*--食譜範圍--*/
+
+#recipe p{
+	clear: both;
+	padding: 15px 0 15px 10px;
+	background-color: rgba(255, 255, 255, 0.28);
+	}
+#recipe #stop1,
+#recipe #stop3,
+#recipe #stop5,
+#recipe #stop7,
+#recipe #stop2,
+#recipe #stop4,
+#recipe #stop6,
+#recipe #stop8,
+#recipe #stop9 {
+	clear: both;
+	width: 99%;
+	box-sizing: border-box;
+	}
+#recipe #stop1 #AAA,
+#recipe #stop3 #BBB,
+#recipe #stop5 #BBB,
+#recipe #stop7 #BBB,
+#recipe #stop9 #BBB {
+	width: 49%;
+	float:right;
+	}
+#recipe #stop1 #BBB,
+#recipe #stop3 #AAA,
+#recipe #stop5 #AAA,
+#recipe #stop7 #AAA,
+#recipe #stop9 #AAA {
+	width: 45%;
+	float:left;
+	}
+#recipe #stop1 #BBB ul,
+#recipe #stop3 #AAA ol,
+#recipe #stop5 #AAA ol,
+#recipe #stop7 #AAA ol,
+#recipe #stop9 #AAA ol{
+    margin: 150px 50px;
+	}
+#recipe #stop1 #BBB ul{
+	margin: 50px 50px;
+	}
+#recipe #stop1 #BBB ul li,
+#recipe #stop3 #AAA ol li,
+#recipe #stop5 #AAA ol li,
+#recipe #stop7 #AAA ol li,
+#recipe #stop9 #AAA ol li{
+    width: 100%;
+	}
+#recipe #stop2 #BBB,
+#recipe #stop4 #BBB,
+#recipe #stop6 #BBB,
+#recipe #stop8 #BBB {
+	width: 49%;
+	float:left;
+	}
+#recipe #stop2 #AAA,
+#recipe #stop4 #AAA,
+#recipe #stop6 #AAA,
+#recipe #stop8 #AAA {
+	width: 45%;
+	float:right;
+	}
+#recipe #stop2 #AAA ol,
+#recipe #stop4 #AAA ol,
+#recipe #stop6 #AAA ol,
+#recipe #stop8 #AAA ol{
+    margin: 150px 50px;
+	}
+#recipe #stop2 #AAA ol li,
+#recipe #stop4 #AAA ol li,
+#recipe #stop6 #AAA ol li,
+#recipe #stop8 #AAA ol li{
+    width: 100%;
+	}
+#endimg p{
+	width: 93%;
+	padding:20px 30px; 
+	background-color: rgba(255, 255, 255, 0.28);
+	}
+#endimg p{
+	font-size: 20px;
+	text-align:center;
+	}
+
+
+/*--footer頁腳--*/
+
+#footer {
+	width: 960px;
+	overflow: hidden;
+	background-color: #0b1521;
+	padding: 1em;
+	margin-right: auto;
+	margin-left: auto;
+	color: #add8f9;
+	}
+#foocon {
+	width: 40%;
+    border-radius: 5px;
+    padding: 20px;
+    float: left;
+	}
+#doologo {
+	width: 50%;
+    float: right;
+	}
+#doologo img{
+	width: 75%;
+	}
+#doologo p{
+	margin: 5px 0;
+	}
+#doologo p a{
+	color: #fff;
+	text-decoration:none;
+	}	
+
+input[type=text],
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #83accc;
+	}
+input[type=text]:hover {
+    background-color:#9ad3ff;
+	}
+input[type=submit] {
+    width: 100%;
+    background-color: #48bbc0;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+	}
+input[type=submit]:hover {
+    background-color: #2472ba;
+	}
+
+
+/*.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
